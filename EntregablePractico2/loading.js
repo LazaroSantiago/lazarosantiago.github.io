@@ -11,7 +11,6 @@ button.forEach(c => {
         let offset = 0;
         let time = setInterval(() => {
             offset += 1;
-            console.log(number)
             if (number)
                 number.textContent=offset;
             if (offset === 100)
