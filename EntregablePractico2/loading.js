@@ -19,7 +19,7 @@ button.forEach(c => {
         }, 50)
     
         setTimeout(function goHome() {
-            location.href="index.html"
+            location.href="home.html"
             loading.classList.remove("begin")
         }, 5000);
     }
