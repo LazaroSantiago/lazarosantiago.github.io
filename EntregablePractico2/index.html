@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hako Games</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="nav-left-container">
+            <img src="images\hamburger.png" class="hamburger">
+            <a href='index.html'><img class="logo-button" src="images\logo.png"></a>
+        </div>
+        
+        <article class="search-bar">
+            <h3 class="search-bar-text">Search</h3>
+            <img src="images\magnifying_glass.png" class="magnifying-glass">
+        </article>
+
+        <img src="images\carrito_usuario.png" class="cart-button">
+        <img src="images\user_icon_logged_in.png" class="login">
+    </nav>
+
+    <div class="cart-menu">
+        <section class="cart-info">
+            <div class="items-added">
+                <p>Your shopping cart:</p>
+                <p>2 items added</p>
+            </div>
+            <div class="checkout">
+                <h1>$20.0</h1>
+                <button class="checkout-button" type="button"><h1>GO TO CHECKOUT</h1></button>
+            </div>
+        </section>
+        <section class="cart">
+            <div class="cart-item">
+                <img class="cart-game-image" src="https://picsum.photos/200/60">
+                <p class="cart-game-title" >Metal Gear Solid</p>
+                <p>$10.0</p>
+            </div>
+            <div class="cart-item">
+                <img class="cart-game-image" src="https://picsum.photos/200/60">
+                <p class="cart-game-title">Metal Gear Solid</p>
+                <p>$10.0</p>
+            </div>
+        </section>
+    </div>
+
+    <aside class="sidebar invisible">
+        <ul class="categories">
+            <li class="category">
+                <img class="sidebar-image" src="images/icons/popular.svg" alt="">
+                <h3 class="sidebar-text">POPULAR</h3>
+            </li>
+            <li class="category">                
+                <img class="sidebar-image" src="images/icons/arcade.svg" alt="">
+                <h3 class="sidebar-text">ARCADE</h3></li>
+            <li class="category">                
+                <img class="sidebar-image" src="images/icons/racing.svg" alt="">
+                <h3 class="sidebar-text">RACING</h3></li>
+            <li class="category">                
+                <img class="sidebar-image" src="images/icons/rhythm.svg" alt="">
+                <h3 class="sidebar-text">RHYTHM</h3></li>
+            <li class="category">                
+                <img class="sidebar-image" src="images/icons/puzzle.svg" alt="">
+                <h3 class="sidebar-text">PUZZLE</h3></li>
+            <li class="category">                
+                <img class="sidebar-image" src="images/icons/dating-sim.svg" alt="">
+                <h3 class="sidebar-text">DATING-SIM</h3></li>
+            <li class="category">                
+                <img class="sidebar-image" src="images/icons/shooter.svg" alt="">
+                <h3 class="sidebar-text">SHOOTER</h3></li>
+            <li class="category">                
+                <img class="sidebar-image" src="images/icons/action.svg" alt="">
+                <h3 class="sidebar-text">ACTION</h3></li>
+            <li class="category">                
+                <img class="sidebar-image" src="images/icons/sports.svg" alt="">
+                <h3 class="sidebar-text">SPORTS</h3></li>
+            <li class="category">                
+                <img class="sidebar-image" src="images/icons/rpg.svg" alt="">
+                <h3 class="sidebar-text">RPG</h3></li>
+            <li class="category">                
+                <img class="sidebar-image" src="images/icons/retro.svg" alt="">
+                <h3 class="sidebar-text">RETRO</h3></li>
+        </ul>
+    </aside>
+    
+    <main class="row-container">
+        
+        <h2 class="row-title">Because you enjoyed...</h2>
+
+        <div class="row">
+            <ul class="wrapper">
+                <div>
+                    <li class="card">
+                        <img class="image" src="images/games-images/aragami.png">
+                        <p class="game-title">ARAGAMI</p>
+                        <div class="card-bottom-row"><button class="launch-button">Free to Play</button></div>
+                    </li>
+                </div>
+
+                <li class="card">
+                    <div class="tooltip">
+                        <p class="tooltip-text">in library</p>
+                    </div>
+
+                    <img class="image" src="images/games-images/barbenheimer.png">
+                    <p class="game-title">BARBENHEIMMER</p>
+                    <div class="card-bottom-row"><p>$9.99 </p> <button class="cart-card"><img class="carrito-image" src="images\carrito_card.png"></button></div>
+                    <button onclick="location.href='ingame.html'" class="launch-button">Launch</button>
+                </li>
+
+
+                <li class="card">
+                    <div class="tooltip">
+                        <p class="tooltip-text">in cart</p>
+                    </div>
+
+                    <img class="image" src="images/games-images/metal.png">
+                    <p class="game-title">METAL GEAR SOLID</p>
+                    <div class="card-bottom-row"> <button class="in-cart-card"><img class="carrito-image" src="images\carrito_card.png"></button></div>
+                </li>
+
+                <li class="card">
+                    <img class="image" src="images/games-images/mark.png">
+                    <p class="game-title">MARK OF THE NINJA</p>
+                    <div class="card-bottom-row"><p>$59.99 </p> <button class="cart-card"><img class="carrito-image" src="images\carrito_card.png"></button></div>
+                </li>
+
+                <li class="card">
+                    <img class="image" src="images/games-images/styx.png">
+                    <p class="game-title">STYX MASTER OF SHADOWS</p>
+                    <div class="card-bottom-row"><p>$29.99 </p> <button class="cart-card"><img class="carrito-image" src="images\carrito_card.png"></button></div>
+                </li>
+                
+                <li class="card">
+                    <img class="image" src="images/games-images/shadow.png">
+                    <p class="game-title">SHADOW TACTICS</p>
+                    <div class="card-bottom-row"><p>$22.99 </p> <button class="cart-card"><img class="carrito-image" src="images\carrito_card.png"></button></div>
+            </ul>
+        </div>
+
+        <h2 class="row-title">Action</h2>
+        <div class="row">
+            <ul class="wrapper">
+                <li class="card">
+                    <img class="image" src="images/games-images/dota.png">
+                    <p class="game-title">DOTA 2</p>
+                    <div class="card-bottom-row"><p>$59.99 </p> <button class="cart-card"><img class="carrito-image" src="images\carrito_card.png"></button></div>
+                </li>
+
+                <li class="card">
+                    <img class="image" src="images/games-images/doom.png">
+                    <p class="game-title">DOOM</p>
+                    <div class="card-bottom-row"><p>$59.99 </p> <button class="cart-card"><img class="carrito-image" src="images\carrito_card.png"></button></div>
+                </li>
+
+                <li class="card">
+                    <img class="image" src="images/games-images/gta.png">
+                    <p class="game-title">GRAND THEFT AUTO V</p>
+                    <div class="card-bottom-row"><p>$19.99 </p> <button class="cart-card"><img class="carrito-image" src="images\carrito_card.png"></button></div>
+                </li>
+
+                <li class="card">
+                    <img class="image" src="images/games-images/rage.png">
+                    <p class="game-title">RAGE 2</p>
+                    <div class="card-bottom-row"><p>$9.99 </p> <button class="cart-card"><img class="carrito-image" src="images\carrito_card.png"></button></div>
+                </li>
+
+                <li class="card">
+                    <img class="image" src="images/games-images/pubg.png">
+                    <p class="game-title">PUBG</p>
+                    <div class="card-bottom-row"><p>$17.99 </p> <button class="cart-card"><img class="carrito-image" src="images\carrito_card.png"></button></div>
+                </li>
+                
+                <li class="card">
+                    <img class="image" src="images/games-images/csgo.png"></img>
+                    <p class="game-title">CS:GO</p>
+                    <div class="card-bottom-row"><p>$59.99 </p> <button class="cart-card"><img class="carrito-image" src="images\carrito_card.png"></button></div>
+                </li>
+            </ul>
+        </div>
+
+        <h2 class="row-title">Arcade</h2>
+        <div class="row">
+            <ul class="wrapper">
+                <div>
+                    <li class="card">
+                        <img class="image" src="images/games-images/mushihimesama.png">
+                        <p class="game-title">mushihimesama</p>
+                        <div class="card-bottom-row"><button class="launch-button">Free to Play</button></div>
+                    </li>
+                </div>
+                <div>
+                    <li class="card">
+                        <img class="image" src="images/games-images/dodonpachi.png">
+                        <p class="game-title">Dodonpachi</p>
+                        <div class="card-bottom-row"><button class="launch-button">Free to Play</button></div>
+                    </li>
+                </div>
+                <li class="card">
+                    <img class="image" src="images/games-images/konosuba.jpg">
+                    <p class="game-title">KONOSUBA - God's Blessing on this Wonderful World! Love For These Clothes Of Desire!</p>
+                    <div class="card-bottom-row"><p>$59.99 </p> <button class="cart-card"><img class="carrito-image" src="images\carrito_card.png"></button></div>
+                </li>
+                <div>
+                    <li class="card">
+                        <img class="image" src="images/games-images/touhou.png">
+                        <p class="game-title">touhou new world</p>
+                        <div class="card-bottom-row"><button class="launch-button">Free to Play</button></div>
+                    </li>
+                </div>
+                <div>
+                    <li class="card">
+                        <img class="image" src="images/games-images/deathsmiles.png">
+                        <p class="game-title">deathsmiles</p>
+                        <div class="card-bottom-row"><button class="launch-button">Free to Play</button></div>
+                    </li>
+                </div>
+                <div>
+                    <li class="card">
+                        <img class="image" src="images/games-images/crimson.png">
+                        <p class="game-title">crimzon clover</p>
+                        <div class="card-bottom-row"><button class="launch-button">Free to Play</button></div>
+                    </li>
+                </div>
+                <div>
+                    <li class="card">
+                        <img class="image" src="images/games-images/zeroranger.png">
+                        <p class="game-title">zeroranger</p>
+                        <div class="card-bottom-row"><button class="launch-button">Free to Play</button></div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </main>
+    
+    <footer class="footer-mobile">
+        <div >
+            <div class="footer-column-logo">
+                <img class="footer-logo" src="images/logo.png" alt="Logo">
+            </div>
+            
+            <div class="footer-column">
+                <h2>Hako Games</h2>
+
+            </div>
+            
+            <div class="footer-column">
+                <h2>Support</h2>
+
+            </div>
+            
+            <div class="footer-column">
+                <h2>Privacy Police</h2>
+
+            </div>
+            
+            <div class="footer-column">
+                <h2>Community</h2>
+
+            </div>
+            
+            <div class="footer-column">
+                <h2>More</h2>
+
+            </div>
+        </div>
+    </footer>
+
+    <footer class="footer-desktop">
+        <div class="footer-columns">
+            <div class="footer-column-logo">
+                <img class="footer-logo" src="images/logo.png" alt="Logo">
+            </div>
+            
+            <div class="footer-column">
+                <h2>Hako Games</h2>
+                <p>About Hako Games</p>
+                <p>Company</p>
+                <p>Blog</p>
+                <p>Logo History</p>
+                <p>Contact Us</p>
+            </div>
+            
+            <div class="footer-column">
+                <h2>Support</h2>
+                <p>Product Support</p>
+                <p>Report Abuse</p>
+                <p>Community</p>
+                <p>Redeem Code</p>
+            </div>
+            
+            <div class="footer-column">
+                <h2>Privacy Police</h2>
+                <p>Terms of Use</p>
+                <p>Help</p>
+                <p>Email Enquiry</p>
+                <p>FAQ/Feedback</p>
+            </div>
+            
+            <div class="footer-column">
+                <h2>Community</h2>
+                <p>Community Central</p>
+                <p>Do Not Sell My Info</p>
+            </div>
+            
+            <div class="footer-column">
+                <h2>More</h2>
+                <p>Business</p>
+                <p>Advertise</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>
