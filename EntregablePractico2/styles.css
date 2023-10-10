@@ -258,7 +258,9 @@ footer {
 .login:hover,
 .logo-button:hover,
 .magnifying-glass:hover,
-.cart-button:hover {
+.cart-button:hover,
+.comment-button:hover,
+.share-button:hover {
   opacity: 0.7;
   cursor: pointer;
 }
@@ -546,11 +548,6 @@ div > .input-box {
   text-align: left;
 }
 
-/* .logo {
-    max-width: 100%;
-    height: auto;
-} */
-
 .cart-menu {
   display: none;
   width: 500px;
@@ -562,6 +559,7 @@ div > .input-box {
   right: 0;
   background-color: var(--primary-light);
 }
+
 .cart-item > p {
   margin-right: 10px;
 }
@@ -962,10 +960,7 @@ section.loading-screen > div {
 
 /* In Game */
 
-
-
 .breadcrumb{
-  cursor: pointer;
   margin-bottom: 0;
   margin-top: 1vh;
   padding-left: 1vw;
@@ -979,6 +974,7 @@ section.loading-screen > div {
   list-style-type: none;
   text-decoration: underline;
   color: var(--secondary-2-lighter);
+  cursor: pointer;
 }
 
 .breadcrumb > li:hover{
@@ -991,6 +987,7 @@ section.loading-screen > div {
 
 .ingame-container{
   display: flex;
+  height: 1400px;
 }
 
 .title{
@@ -1128,13 +1125,21 @@ section.loading-screen > div {
 }
 
 .comment-button{
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-top: 5px;
   width: 120px;   
   height: 50px;
-  background-color: var(--primary);
+	background-color: var(--secondary-1);
   border-radius: 4px;
   box-shadow: var(--shadow-subtle);
 }
+
+/* .form-button {
+	width: 120px;
+	height: 50px;
+	border-radius: 4px;
+	margin-top: 50px;
+} */
 
 .comment-stars{
   margin-top: 10px;
@@ -1149,4 +1154,26 @@ section.loading-screen > div {
 
 .star:hover{
   transform: scale(1.5);
+}
+
+.ingame-main {
+  display: none;
+  width: 500px;
+  border: 1px solid var(--black);
+  box-shadow: 4px 6px 4px var(--black-light);
+  z-index: 4;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: var(--primary-light);
+}
+
+.comment > div{
+  border-bottom-color: 1px, var(--black-light);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.first-video{
+  margin-top: 14px;
 }
