@@ -959,6 +959,194 @@ section.loading-screen > div {
 .launch-animation:hover:before {
   width: 100%;
 }
-/* Last animation */
+
+/* In Game */
 
 
+
+.breadcrumb{
+  cursor: pointer;
+  margin-bottom: 0;
+  margin-top: 1vh;
+  padding-left: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.breadcrumb > li{
+  padding: 6px;
+  list-style-type: none;
+  text-decoration: underline;
+  color: var(--secondary-2-lighter);
+}
+
+.breadcrumb > li:hover{
+  opacity: 0.7;
+}
+
+.breadcrumb > p {
+  color: var(--secondary-2-lighter);
+}
+
+.ingame-container{
+  display: flex;
+}
+
+.title{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2px;
+}
+
+.title > img {
+  border: solid 2px black;
+  border-radius: 6px;
+  margin: 8px;
+  padding: 0 4px;
+  box-shadow: var(--shadow-subtle);
+}
+
+.game-and-comments{
+  flex: 3;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  margin-bottom: 20px;
+}
+
+.instructions-box{
+  flex: 1;
+}
+.instructions{
+  margin: 10px;
+  padding: 9px;
+  border-radius: 6px;
+  background-color: var(--primary-light);
+  box-shadow: var(--shadow-subtle);
+}
+
+.instructions-line{
+  border: 1px solid black;
+}
+
+.videos > img{
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.comments-box{
+  padding-bottom: 50px;
+  margin-right: 8px;
+  margin-top: 20px;
+  display: flex;
+  border-radius: 6px;
+  background-color: var(--primary-light);
+  box-shadow: var(--shadow-subtle);
+}
+
+.comments-box > div {
+  flex: 1;  
+}
+
+.comments-box > div:first-child{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.comments-box > div:last-child{
+  padding-left: 6px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.comments{
+  flex: 3;
+  flex-direction: column;
+}
+
+.comment{
+  border: solid var(--black) 1px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: var(--primary-lighter);
+  box-shadow: var(--shadow-subtle);
+}
+
+.comment > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.comment > div > div{
+  display: flex;
+  align-items: center;
+
+}
+
+.comment > p {
+  margin-left: 10px;
+  color: black;
+}
+
+.comment > div > div > h1 {
+  color:black;
+  text-shadow: none;
+}
+
+.game{
+  display: flex;
+  justify-content: center;
+}
+
+.game > img{
+  object-fit: contain;
+  width: 100%;
+  max-height: 100%;
+}
+
+.user-image{
+  margin: 8px;
+  height: 60px;
+  width: 60px;
+}
+
+.another-user-image{
+  height: 50px;
+  width: 50px;
+}
+
+.input-comment{
+  border-radius: 8px;
+  width: 99%;
+  margin-top: 10px;
+  padding-bottom: 60px;
+  box-shadow: var(--shadow-subtle);
+}
+
+.comment-button{
+  margin-left: 20px;
+  width: 120px;   
+  height: 50px;
+  background-color: var(--primary);
+  border-radius: 4px;
+  box-shadow: var(--shadow-subtle);
+}
+
+.comment-stars{
+  margin-top: 10px;
+}
+
+.star{
+  box-sizing: content-box;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s;
+}
+
+.star:hover{
+  transform: scale(1.5);
+}
