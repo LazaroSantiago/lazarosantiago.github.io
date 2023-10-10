@@ -605,7 +605,6 @@ div > .input-box {
 }
 
 .checkout-button:hover {
-
   transform: skew(-2.5deg);
 }
 
@@ -960,7 +959,7 @@ section.loading-screen > div {
 
 /* In Game */
 
-.breadcrumb{
+.breadcrumb {
   margin-bottom: 0;
   margin-top: 1vh;
   padding-left: 1vw;
@@ -969,7 +968,7 @@ section.loading-screen > div {
   justify-content: flex-start;
 }
 
-.breadcrumb > li{
+.breadcrumb > li {
   padding: 6px;
   list-style-type: none;
   text-decoration: underline;
@@ -977,7 +976,7 @@ section.loading-screen > div {
   cursor: pointer;
 }
 
-.breadcrumb > li:hover{
+.breadcrumb > li:hover {
   opacity: 0.7;
 }
 
@@ -985,12 +984,12 @@ section.loading-screen > div {
   color: var(--secondary-2-lighter);
 }
 
-.ingame-container{
+.ingame-container {
   display: flex;
   height: 1400px;
 }
 
-.title{
+.title {
   display: flex;
   justify-content: space-between;
   padding-left: 2px;
@@ -1004,17 +1003,17 @@ section.loading-screen > div {
   box-shadow: var(--shadow-subtle);
 }
 
-.game-and-comments{
+.game-and-comments {
   flex: 3;
   padding-left: 1vw;
   padding-right: 1vw;
   margin-bottom: 20px;
 }
 
-.instructions-box{
+.instructions-box {
   flex: 1;
 }
-.instructions{
+.instructions {
   margin: 10px;
   padding: 9px;
   border-radius: 6px;
@@ -1022,17 +1021,17 @@ section.loading-screen > div {
   box-shadow: var(--shadow-subtle);
 }
 
-.instructions-line{
+.instructions-line {
   border: 1px solid black;
 }
 
-.videos > img{
+.videos > img {
   object-fit: contain;
   max-width: 100%;
   max-height: 100%;
 }
 
-.comments-box{
+.comments-box {
   padding-bottom: 50px;
   margin-right: 8px;
   margin-top: 20px;
@@ -1043,27 +1042,27 @@ section.loading-screen > div {
 }
 
 .comments-box > div {
-  flex: 1;  
+  flex: 1;
 }
 
-.comments-box > div:first-child{
+.comments-box > div:first-child {
   display: flex;
   justify-content: flex-end;
 }
 
-.comments-box > div:last-child{
+.comments-box > div:last-child {
   padding-left: 6px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
 }
 
-.comments{
+.comments {
   flex: 3;
   flex-direction: column;
 }
 
-.comment{
+.comment {
   border: solid var(--black) 1px;
   margin-top: 10px;
   padding: 10px;
@@ -1072,16 +1071,15 @@ section.loading-screen > div {
   box-shadow: var(--shadow-subtle);
 }
 
-.comment > div{
+.comment > div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.comment > div > div{
+.comment > div > div {
   display: flex;
   align-items: center;
-
 }
 
 .comment > p {
@@ -1090,33 +1088,33 @@ section.loading-screen > div {
 }
 
 .comment > div > div > h1 {
-  color:black;
+  color: black;
   text-shadow: none;
 }
 
-.game{
+.game {
   display: flex;
   justify-content: center;
 }
 
-.game > img{
+.game > img {
   object-fit: contain;
   width: 100%;
   max-height: 100%;
 }
 
-.user-image{
+.user-image {
   margin: 8px;
   height: 60px;
   width: 60px;
 }
 
-.another-user-image{
+.another-user-image {
   height: 50px;
   width: 50px;
 }
 
-.input-comment{
+.input-comment {
   border-radius: 8px;
   width: 99%;
   margin-top: 10px;
@@ -1124,12 +1122,12 @@ section.loading-screen > div {
   box-shadow: var(--shadow-subtle);
 }
 
-.comment-button{
+.comment-button {
   margin-left: 10px;
   margin-top: 5px;
-  width: 120px;   
+  width: 120px;
   height: 50px;
-	background-color: var(--secondary-1);
+  background-color: var(--secondary-1);
   border-radius: 4px;
   box-shadow: var(--shadow-subtle);
 }
@@ -1141,18 +1139,18 @@ section.loading-screen > div {
 	margin-top: 50px;
 } */
 
-.comment-stars{
+.comment-stars {
   margin-top: 10px;
 }
 
-.star{
+.star {
   box-sizing: content-box;
   width: 24px;
   height: 24px;
   transition: transform 0.2s;
 }
 
-.star:hover{
+.star:hover {
   transform: scale(1.5);
 }
 
@@ -1168,12 +1166,85 @@ section.loading-screen > div {
   background-color: var(--primary-light);
 }
 
-.comment > div{
+.comment > div {
   border-bottom-color: 1px, var(--black-light);
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
 
-.first-video{
+.first-video {
   margin-top: 14px;
+}
+
+.left-button {
+  margin-top: 5px;
+  margin-left: 48%;
+  margin-right: 1%;
+}
+.left-button > img {
+  margin-top: 5px;
+  width: 25px;
+  height: 25px;
+}
+
+.right-button {
+  position: relative;
+}
+
+.right-button > img {
+  width: 25px;
+  height: 25px;
+}
+
+.wrapper {
+  display: flex;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wrapper::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.wrapper::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+.wrapper > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+
+  display: flex;
+}
+.wrapper > div:target {
+  /*   transform: scale(0.8); */
+}
+.slider > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
 }
