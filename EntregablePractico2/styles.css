@@ -1234,9 +1234,7 @@ section.loading-screen > div {
 
   display: flex;
 }
-.wrapper > div:target {
-  /*   transform: scale(0.8); */
-}
+
 .slider > a {
   display: inline-flex;
   width: 1.5rem;
