@@ -768,6 +768,10 @@ section.loading-screen > div {
 }
 
 @media (max-width: 480px) {
+  .arrows{
+    visibility: hidden;
+  }
+
   .cart-info {
     box-shadow: var(--shadow-subtle);
     border: none;
