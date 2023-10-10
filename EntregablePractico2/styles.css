@@ -250,6 +250,8 @@ footer {
   width: 60px;
 }
 
+.left-button:hover,
+.right-button:hover,
 .hamburger:hover,
 .form-button:hover,
 .carrito-image:hover,
@@ -1181,6 +1183,7 @@ section.loading-screen > div {
   margin-left: 48%;
   margin-right: 1%;
 }
+
 .left-button > img {
   margin-top: 5px;
   width: 25px;
