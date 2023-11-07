@@ -1331,3 +1331,8 @@ td > h3{
 th, h2{
   margin-right: 20px;
 }
+
+.selected{
+  outline:2px var(--black) solid;
+  border-radius:50%;
+}
