@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="scripts/script.js"></script>
+  <title>Hako Games</title>
+</head>
+
+<body>
+  <nav class="nav-bar">
+    <div class="nav-left-container">
+      <img src="images\hamburger.png" class="hamburger" />
+      <a href="home.html"><img class="logo-button" src="images\logo.svg" /></a>
+    </div>
+
+    <article class="search-bar">
+      <h3 class="search-bar-text">Search</h3>
+      <img src="images\magnifying_glass.png" class="magnifying-glass" />
+    </article>
+
+    <img src="images\carrito_usuario.png" class="cart-button" />
+    <img src="images\user_icon_logged_in.png" class="login" />
+  </nav>
+
+  <div class="cart-menu">
+    <section class="cart-info">
+      <div class="items-added">
+        <p>Your shopping cart:</p>
+        <p>2 items added</p>
+      </div>
+      <div class="checkout">
+        <h1>$20.0</h1>
+        <button class="checkout-button" type="button">
+          <h1>GO TO CHECKOUT</h1>
+        </button>
+      </div>
+    </section>
+    <section class="cart">
+      <div class="cart-item">
+        <img class="cart-game-image" src="images/games-images/metal.png" />
+        <p class="cart-game-title">Metal Gear Solid</p>
+        <p>$10.0</p>
+      </div>
+      <div class="cart-item">
+        <img class="cart-game-image" src="images/games-images/konosuba.jpg" />
+        <p class="cart-game-title">
+          KONOSUBA - God's Blessing on this Wonderful World! Love For These
+          Clothes Of Desire!
+        </p>
+        <p>$10.0</p>
+      </div>
+    </section>
+  </div>
+
+  <aside class="sidebar invisible">
+    <ul class="categories">
+      <li class="category">
+        <img class="sidebar-image" src="images/icons/popular.svg" alt="" />
+        <h3 class="sidebar-text">POPULAR</h3>
+      </li>
+      <li class="category">
+        <img class="sidebar-image" src="images/icons/arcade.svg" alt="" />
+        <h3 class="sidebar-text">ARCADE</h3>
+      </li>
+      <li class="category">
+        <img class="sidebar-image" src="images/icons/racing.svg" alt="" />
+        <h3 class="sidebar-text">RACING</h3>
+      </li>
+      <li class="category">
+        <img class="sidebar-image" src="images/icons/rhythm.svg" alt="" />
+        <h3 class="sidebar-text">RHYTHM</h3>
+      </li>
+      <li class="category">
+        <img class="sidebar-image" src="images/icons/puzzle.svg" alt="" />
+        <h3 class="sidebar-text">PUZZLE</h3>
+      </li>
+      <li class="category">
+        <img class="sidebar-image" src="images/icons/dating-sim.svg" alt="" />
+        <h3 class="sidebar-text">DATING-SIM</h3>
+      </li>
+      <li class="category">
+        <img class="sidebar-image" src="images/icons/shooter.svg" alt="" />
+        <h3 class="sidebar-text">SHOOTER</h3>
+      </li>
+      <li class="category">
+        <img class="sidebar-image" src="images/icons/action.svg" alt="" />
+        <h3 class="sidebar-text">ACTION</h3>
+      </li>
+      <li class="category">
+        <img class="sidebar-image" src="images/icons/sports.svg" alt="" />
+        <h3 class="sidebar-text">SPORTS</h3>
+      </li>
+      <li class="category">
+        <img class="sidebar-image" src="images/icons/rpg.svg" alt="" />
+        <h3 class="sidebar-text">RPG</h3>
+      </li>
+      <li class="category">
+        <img class="sidebar-image" src="images/icons/retro.svg" alt="" />
+        <h3 class="sidebar-text">RETRO</h3>
+      </li>
+    </ul>
+  </aside>
+  <!-- pegar de home el resto -->
+
+  <ul class="breadcrumb">
+    <li>Library</li>
+    <p>></p>
+    <li>Puzzles</li>
+  </ul>
+
+  <main class="ingame-container">
+    <div class="game-and-comments">
+      <section class="game-box">
+        <article>
+          <div class="title">
+            <h1>Barbenheimmer Four-in-a-row</h1>
+            <img class="share-button" src="images/icons/share.svg" alt="" />
+          </div>
+          <div class="game">
+
+            <div id="info" class="container-fluid col-4 info">
+              <div class="info-div">
+                <div id="turn" class="hidden">
+                  <h2>Turno Jugador 1 </h2>
+                </div>
+                <div id="timer" class="hidden">
+                  <h2><!-- Tiempo restante:  --><span id="time"> 5:00 </span> </h2>
+                </div>
+              </div>
+
+              <button id="restart" type="button" class="start-button">
+                <h2>Reiniciar</h2>
+              </button>
+            </div>
+
+            <div class="menu" id="menu">
+
+              <div class="container-fluid config col-4">
+                <div class="row col-6">
+                  <h2 id="infoMode">Modo 4 en linea: </h2>
+                  <div>
+                    <button id="mode4" type="button" class="btn">
+                      <h2>4</h2>
+                    </button>
+                    <button id="mode5" type="button" class="btn">
+                      <h2>5</h2>
+                    </button>
+                    <button id="mode6" type="button" class="btn">
+                      <h2>6</h2>
+                    </button>
+                  </div>
+
+                </div>
+                <div class="row col-5">
+
+                  <button id="start" type="button" class="start-button">
+                    <h2>Comenzar</h2>
+                  </button>
+
+                </div>
+                <div class="col-1"></div>
+              </div>
+              
+              <div class="container-fluid tokens col-4">
+                <table>
+                  <tr>
+                    <th>
+                      <h2>Fichas</h2>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h3>Jugador 1:</h3>
+                    </td>
+                    <td class="token selected"><a href="#" id="selectBlue"><img id="FichaAzul" src="images/game-images\FichaAzul.png"
+                          style="max-width: 52px; height: auto; "></a></td>
+                    <td class="token"><a href="#" id="selectGreen"><img id="FichaVerde" src="images/game-images\FichaVerde.png"
+                          style="max-width: 52px; height: auto; "></a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h3>Jugador 2:</h3>
+                    </td>
+                    <td class="token selected"><a href="#" id="selectRed"><img id="FichaRoja" src="images/game-images\FichaRoja1.png"
+                          style="max-width: 52px; height: auto; "></a></td>
+                    <td class="token"><a href="#" id="selectYellow"><img id="FichaAmarilla" src="images/game-images\FichaAmarilla1.png"
+                          style="max-width: 52px; height: auto; "></a></td>
+                  </tr>
+                </table>
+              </div>
+
+
+
+
+
+
+            </div>
+            <div class="canvas">
+              <canvas class="nonClickable" id="gameCanvas" width="986" height="544" ></canvas>
+            </div>
+            <img src='images/game-images/casilleroVacio.png' id="casillero" style="display: none;">
+          </div>
+        </article>
+      </section>
+      <section class="comments-box">
+        <div>
+          <img src="images\user_icon_logged_in.png" class="user-image" />
+        </div>
+        <section class="comments">
+          <article>
+            <input class="input-comment" type="text" placeholder="Add a comment.." />
+          </article>
+          <article class="comment">
+            <div>
+              <div>
+                <img class="another-user-image" src="images/comment-img.svg" alt="" />
+                <h1>RuthHandlerNo1Fan</h1>
+              </div>
+              <article class="comment-stars">
+                <img src="images/icons/golden-star.svg" class="star" />
+                <img src="images/icons/popular.svg" class="star" />
+                <img src="images/icons/popular.svg" class="star" />
+                <img src="images/icons/popular.svg" class="star" />
+                <img src="images/icons/popular.svg" class="star" />
+              </article>
+            </div>
+            <p>
+              I have over 500 hours on this game and I’m still gonna give it a
+              bad review. Cope.
+            </p>
+          </article>
+          <article class="comment">
+            <div>
+              <div>
+                <img class="another-user-image" src="images/comment-img2.svg" alt="" />
+                <h1>RuthHandlerNo1Fan</h1>
+              </div>
+              <article class="comment-stars">
+                <img src="images/icons/golden-star.svg" class="star" />
+                <img src="images/icons/golden-star.svg" class="star" />
+                <img src="images/icons/golden-star.svg" class="star" />
+                <img src="images/icons/golden-star.svg" class="star" />
+                <img src="images/icons/golden-star.svg" class="star" />
+              </article>
+            </div>
+            <p>Best invention since sliced bread and penicillin!!!</p>
+          </article>
+        </section>
+        <div>
+          <div class="comment-stars">
+            <img src="images/icons/popular.svg" class="star" />
+            <img src="images/icons/popular.svg" class="star" />
+            <img src="images/icons/popular.svg" class="star" />
+            <img src="images/icons/popular.svg" class="star" />
+            <img src="images/icons/popular.svg" class="star" />
+          </div>
+          <button class="comment-button">
+            <p class="form-button-text">Send</p>
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <div class="instructions-box">
+      <section class="instructions">
+        <article>
+          <h1>How to play</h1>
+          <div class="instructions-line"></div>
+          <p>
+            Players take turns dropping one of their colored discs into any of
+            the seven columns. The disc will fall to the lowest unoccupied
+            space in the selected column.
+          </p>
+
+          <p>The game continues with players taking alternating turns.</p>
+
+          <p>
+            The objective is to be the first to connect four of your own discs
+            in a row, either horizontally, vertically, or diagonally. The row
+            can be in any direction (horizontal, vertical, or diagonal).
+          </p>
+
+          <p>
+            If the grid becomes completely filled with discs, and no player
+            has four in a row, the game ends in a draw.
+          </p>
+        </article>
+        <article>
+          <h1>Controls</h1>
+          <div class="instructions-line"></div>
+          <p>
+            You play by using your touchscreen or mouse to select, drag, and
+            drop coins into columns on the game grid. You can tap/click to
+            pick up a coin, drag it to the desired column, and release to drop
+            it. The game checks move validity, monitors winning conditions,
+            and may offer optional features like undo/redo, restart, and
+            settings adjustments for an enhanced gaming experience.
+          </p>
+        </article>
+        <article class="videos">
+          <h1>Videos</h1>
+          <div class="instructions-line"></div>
+          <img class="first-video" src="images/video1.png" alt="" />
+          <img src="images/video2.png" alt="" />
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer-desktop">
+    <div class="footer-columns">
+      <div class="footer-column-logo">
+        <img class="footer-logo" src="images/logo.svg" alt="Logo" />
+      </div>
+
+      <div class="footer-column">
+        <h2>Hako Games</h2>
+        <p>About Hako Games</p>
+        <p>Company</p>
+        <p>Blog</p>
+        <p>Logo History</p>
+        <p>Contact Us</p>
+      </div>
+
+      <div class="footer-column">
+        <h2>Support</h2>
+        <p>Product Support</p>
+        <p>Report Abuse</p>
+        <p>Community</p>
+        <p>Redeem Code</p>
+      </div>
+
+      <div class="footer-column">
+        <h2>Privacy Police</h2>
+        <p>Terms of Use</p>
+        <p>Help</p>
+        <p>Email Enquiry</p>
+        <p>FAQ/Feedback</p>
+      </div>
+
+      <div class="footer-column">
+        <h2>Community</h2>
+        <p>Community Central</p>
+        <p>Do Not Sell My Info</p>
+      </div>
+
+      <div class="footer-column">
+        <h2>More</h2>
+        <p>Business</p>
+        <p>Advertise</p>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/gamePiece.js"></script>
+  <script src="scripts/box.js"></script>
+  <script src="scripts/gameBoard.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/drag.js"></script>
+</body>
+
+</html>
