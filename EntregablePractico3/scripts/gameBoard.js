@@ -18,7 +18,7 @@ class gameBoard {
         clearInterval(timer);
         figuras = [];
         drawFig();
-        document.getElementById("info").innerHTML = "<h1>GANADOR: JUGADOR "+ player +"!</h1>"
+        document.getElementById("info").innerHTML = "<h1>WINNER: PLAYER "+ player +"!</h1>" +"<button id='restart' type='button' onclick='reloadPage()' class='start-button'><h2>Restart</h2></button>"
         // console.log("gano")
     }
 
@@ -31,7 +31,7 @@ class gameBoard {
     checkTie(){                         //Verifica si quedan todavia fichas para jugar
                                         // de no ser asi es un empate
         if (figuras.length==0)
-            document.getElementById("info").innerHTML = "<h1>EMPATE, TODOS GANAN!</h1>"
+            document.getElementById("info").innerHTML = "<h1>DRAW, EVERYBODY WINS!</h1>"
     }
 
     isInDropbox(x,y){                   //Verifica si las coordenadas recibidas por parametro
@@ -128,7 +128,7 @@ class gameBoard {
     changeTurn(){                   //Cambia el turno de jugador
         turn++;
         player=(turn%2)+1;
-        document.getElementById("turn").innerHTML= "<h2>Turno Jugador " + player + "</h2>";
+        document.getElementById("turn").innerHTML= "<h2>Turn: player " + player + "</h2>";
     }
 
     //verify
