@@ -14,8 +14,8 @@ let win = false;
 let turn = 0;
 let player = (turn%2)+1;
 let mode = 4;
-let token1 = document.getElementById("FichaAzul");
-let token2 = document.getElementById("FichaRoja");
+let token1 = document.getElementById("barbie");
+let token2 = document.getElementById("oppenheimer");
 let clock = document.getElementById("time");
 let btnStart = document.getElementById("start");
 let btnRestart = document.getElementById("restart");
@@ -137,25 +137,25 @@ function toggleButtons(btn4, btn5, btn6) {
 }
 
 slcGreen.addEventListener("click", function () {        //Selecciona la  ficha verde para el  jugador 1
-    token1 = document.getElementById("FichaVerde");
+    token1 = document.getElementById("ken");
     tokens[1].classList.toggle("selected", true);
     tokens[0].classList.toggle("selected", false);
 });
 
 slcBlue.addEventListener("click", function () {         //Selecciona la  ficha blue para el  jugador 1
-    token1=document.getElementById("FichaAzul");
+    token1=document.getElementById("barbie");
     tokens[0].classList.toggle("selected", true);
     tokens[1].classList.toggle("selected", false);
 });
 
 slcRed.addEventListener("click", function () {          //Selecciona la  ficha red para el  jugador 2
-    token2=document.getElementById("FichaRoja");
+    token2=document.getElementById("oppenheimer");
     tokens[2].classList.toggle("selected", true);
     tokens[3].classList.toggle("selected", false);
 });
 
 slcYellow.addEventListener("click", function () {       //Selecciona la  ficha amarilla para el  jugador 2
-    token2=document.getElementById("FichaAmarilla");
+    token2=document.getElementById("bomb");
     tokens[3].classList.toggle("selected", true);
     tokens[2].classList.toggle("selected", false);
 });

@@ -35,10 +35,10 @@ class gamePiece{
     }
 
     draw() {            //Carga y dibuja todas las imagenes en la matriz
-        let posX = this.getPosX() - 2;
-        let posY = this.getPosY();
-        let tokenWidth = 40;
-        let tokenHeight = 40;
+        let posX = this.getPosX()+1;
+        let posY = this.getPosY()+1;
+        let tokenWidth = 35;
+        let tokenHeight = 35;
 
         switch (this.getPlayer()) {
             case 1:     
