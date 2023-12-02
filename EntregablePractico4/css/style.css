@@ -1,0 +1,839 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  height: 8900px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+h1 {
+  color: #fff;
+  font-family: Lato;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 94.5%;
+}
+
+h2 {
+  color: #000;
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 94.5%;
+}
+p {
+  color: #000;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.visible {
+  visibility: visible !important;
+}
+
+/*contenedor de la primera foto con la foto de fondo del cielo*/
+
+header {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 83px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  background: #5499f8;
+}
+
+header.scroll {
+  transition: all 0.3s ease;
+  background: linear-gradient(
+    180deg,
+    #5499f8 0%,
+    #5499f8 87.91%,
+    rgba(84, 153, 248, 0) 100%
+  );
+}
+
+header img {
+  position: relative;
+  width: 133px;
+  height: 68px;
+  margin: 0 33.5px;
+  opacity: 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0px;
+  border: 0px;
+  margin: 0 83px;
+}
+
+.hamburguesa {
+  height: 4px;
+  width: 34px;
+  background-color: #ffe901;
+  border: 4px solid #2981ff;
+  border-radius: 10px;
+  box-shadow: 4px 5px 0px 0px #02187e;
+}
+
+/*logo*/
+.div-logo {
+  z-index: 7;
+  position: absolute;
+  top: 68px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-logo {
+  width: 590px;
+  height: 301px;
+}
+
+#btn-comprar {
+  width: 200px;
+  height: 50px;
+  border-radius: 111px;
+  border: 8px solid var(--2982-ff, #2982ff);
+  background: #ffe901;
+  box-shadow: 4px 5px 0px 0px #02187e;
+}
+
+/*texto que dice comprar del boton*/
+#btn-comprar p {
+  margin: 0;
+  text-align: center;
+  color: #02187e;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 94.5%; /* 18.9px */
+}
+
+/*punto 10- hover*/
+#btn-comprar:hover,
+#btn-comprar-ahora:hover {
+  background: #2982ff;
+  border: 8px solid #ffe901;
+  transform: scale(1.1);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.parallax-layer-edificios {
+  z-index: 4;
+}
+/*tres imagenes svg de los 3 edificios con sus estilos para acomodar tamaño*/
+.contenedor-img-cielo .edificios {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.contenedor-img-cielo {
+  position: relative;
+  width: 100%;
+  height: 823px;
+  left: 0;
+  background-color: rgb(78, 152, 247);
+}
+
+#cielo1 {
+  position: absolute;
+  top: 103px;
+  left: 0;
+  width: 100%;
+  height: 720px;
+}
+
+#img-edificio1 {
+  margin: 0;
+  width: 452px;
+  height: 720px;
+  position: relative;
+  left: -120px;
+}
+
+#img-edificio2 {
+  width: 543.5px;
+  height: 213.5px;
+  margin: 0px;
+}
+
+#img-edificio3 {
+  width: 354px;
+  height: 727.5px;
+  position: relative;
+  right: -120px;
+}
+
+.contenedor-img-cielo .spiders {
+  z-index: 5;
+  width: 100%;
+  position: absolute;
+  top: 383px;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-img-cielo .spiders div {
+  width: 1080px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-spiders-aranas {
+  z-index: 5;
+}
+
+#img-spider1 {
+  top: 312px;
+  left: 695px;
+  width: 393px;
+  height: 393px;
+  transition: all 1.5;
+}
+#img-spider2 {
+  top: 380px;
+  left: 404px;
+  width: 465px;
+  height: 465px;
+  transition: all 1.5;
+}
+#img-spider3 {
+  top: 365px;
+  left: 90px;
+  width: 360px;
+  height: 444px;
+  transition: all 1.5;
+}
+
+.tela1,
+.tela2 {
+  position: absolute;
+  z-index: 5;
+}
+.tela1 {
+  top: 27px;
+  left: -305px;
+  width: 812px;
+  height: 576px;
+}
+
+.tela2 {
+  top: 1px;
+  right: -257px;
+  width: 376px;
+}
+
+/* .transform_back{
+  transform: scale(0.5);
+}
+.transform_forward{
+  transform: scale(1.5);
+} */
+.transform_right {
+  transform: translateX(20%);
+}
+.transform_left {
+  transform: translateX(-20%);
+}
+/*---------------------css segundo contenedor del duende verde(violeta)--------------------*/
+#cont-duende {
+  position: absolute;
+  top: 756px;
+  width: 100%;
+  height: 844.5px;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+}
+
+#cont-duende > div.fondo {
+  position: absolute;
+  width: 100%;
+  height: 844.5px;
+  background-color: #8f6aa6;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+}
+
+div.contenido {
+  position: relative;
+  width: 1080px;
+}
+
+#cont-duende img.fondo {
+  width: 100%;
+}
+
+#img-duende {
+  position: absolute;
+  top: -55px;
+  left: 621px;
+  width: 553px;
+  height: 921px;
+  z-index: 6;
+}
+
+#cont-duende h1 {
+  width: 646px;
+  height: 114px;
+  position: absolute;
+  margin-top: 219px;
+  z-index: 10;
+  color: #fff;
+}
+
+#cont-duende p {
+  top: 337px;
+  width: 586px;
+  height: 154px;
+  position: absolute;
+  color: #fff;
+}
+
+#game1 {
+  top: 523px;
+  position: absolute;
+  transform: rotate(-2.222deg);
+  z-index: 5;
+}
+
+/*-----------------------HISTORIAS DE LOS SPIDERS(tercer contenedor)---------------------*/
+section.mini-historias {
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: 1472px;
+  background: #fff;
+  height: 1085px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#mini-historias {
+  z-index: 1;
+  position: absolute;
+  padding-top: 1px;
+  top: 368px;
+  width: 1080px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+#mini-historias > div {
+  width: 332.96px;
+  display: flex;
+  flex-direction: column;
+}
+
+section.mini-historias .historia {
+  opacity: 0.5;
+}
+
+section.mini-historias .historia2 {
+  transition: all 0.5s;
+}
+
+section.mini-historias .historia1 {
+  transition: all 0.8s;
+}
+
+section.mini-historias .historia3 {
+  transition: all 1s;
+}
+
+.transform_up {
+  transform: translateY(30%);
+}
+
+.aparece {
+  opacity: 1 !important;
+  transform: none;
+}
+/*------------------------------GHOST SPIDER(cuarto contenedor)---------------------------------*/
+#ghostspider {
+  top: 2497px;
+  position: absolute;
+  height: 566px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#ghostspider div.fondo {
+  position: absolute;
+  z-index: 0;
+  background-image: url(../IMG/ghost-spider.png);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cards-race {
+  cursor: pointer;
+}
+
+#race1:hover,
+#race2:hover,
+#race3:hover {
+  z-index: 4;
+  scale: 1.3;
+  transform: rotate(0deg) !important;
+}
+
+#race1 {
+  z-index: 1;
+  top: -99px;
+  left: 0;
+  width: 546.108px;
+  height: 326.509px;
+  transform: rotate(-13.078deg);
+  position: absolute;
+  transition: all 0.3s ease-in;
+}
+
+#race2 {
+  z-index: 2;
+  top: 84px;
+  left: 0;
+  width: 543.218px;
+  height: 325.787px;
+  transform: rotate(-26.474deg);
+  position: absolute;
+  transition: all 0.3s ease-in;
+}
+#race3 {
+  z-index: 3;
+  top: 298px;
+  left: 0;
+  width: 546.108px;
+  height: 326.509px;
+  transform: rotate(-36.016deg);
+  position: absolute;
+  transition: all 0.3s ease-in;
+}
+
+/*--------------------------------------VENGADORES(quinto container)---------------------------------------*/
+section.vengadores {
+  position: absolute;
+  top: 3063px;
+  height: 935px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+section.vengadores div.fondo {
+  position: absolute;
+  top: -87px;
+  background-color: #000;
+  clip-path: polygon(0px 87px, 100% -2px, 100% 1023px, 0 85%);
+  width: 100%;
+  height: 1023px;
+}
+
+#txt-vengadores {
+  top: 138px;
+  width: 667px;
+  height: 171px;
+  color: #fff;
+  position: absolute;
+}
+
+#elastico {
+  top: 350px;
+  position: absolute;
+  left: 74px;
+  width: 451.258px;
+  height: 591.442px;
+  transform: rotate(-12.483deg);
+  z-index: 3;
+}
+
+#blackpanter {
+  top: 190px;
+  left: 500.24px;
+  width: 368.308px;
+  height: 552.462px;
+  transform: rotate(13.615deg);
+  position: absolute;
+  z-index: 2;
+}
+
+#hulk {
+  left: 690.24px;
+  top: 542px;
+  position: absolute;
+  width: 410.106px;
+  height: 437.972px;
+  transform: rotate(7.515deg);
+  z-index: 3;
+}
+
+.imagen-fondo {
+  position: absolute;
+  top: 406.11px;
+  width: 1077.059px;
+  height: 527.626px;
+}
+
+#vengadores-fondo3 {
+  z-index: 3;
+}
+#vengadores-fondo2 {
+  z-index: 2;
+}
+#vengadores-fondo1 {
+  z-index: 1;
+}
+
+/*----------------------------------------MAS AMIGOS MAS DIVERSION(sexto container)---------------------------*/
+
+.mas-amigos {
+  top: 4000px;
+  position: absolute;
+}
+
+.principal {
+  width: 1080px;
+}
+
+.principal h1 {
+  color: #000;
+}
+.principal h2 {
+  margin: 0;
+}
+
+.mas-amigos > .principal > div {
+  height: 1650px;
+}
+
+.boxImagenes {
+  width: 552px;
+  height: 1650px;
+  position: absolute;
+}
+
+.imagenes {
+  height: 302px;
+  position: sticky;
+  top: 35%;
+}
+
+.img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+
+.mostrar {
+  z-index: 1;
+  opacity: 1 !important;
+}
+
+#img1 {
+  background-image: url(../IMG/mas-amigos-1.png);
+}
+#img2 {
+  background-image: url(../IMG/mas-amigos-2.png);
+}
+#img3 {
+  background-image: url(../IMG/mas-amigos-3.png);
+}
+#img4 {
+  background-image: url(../IMG/mas-amigos-4.png);
+}
+
+.boxTextos {
+  position: relative;
+  left: 601px;
+  width: 467px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.texto {
+  height: 350px;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+
+/*-----------------------------------GRAN PODER(septimo container)-----------------------*/
+.gran-poder-compra {
+  position: absolute;
+  top: 5935px;
+  width: 100%;
+  height: 477px;
+  background-color: #000;
+  clip-path: polygon(0 0, 100% 20%, 100% 75%, 0 100%);
+  display: flex;
+  justify-content: center;
+}
+
+.gran-poder-compra h1 {
+  top: 50px;
+  position: absolute;
+  width: 816px;
+  color: #fff;
+  font-family: Lato;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.gran-poder-compra button {
+  top: 278px;
+  position: absolute;
+  width: 292px;
+  height: 50px;
+  border-radius: 111px;
+  border: 8px solid var(--2982-ff, #2982ff);
+  background: #ffe901;
+  box-shadow: 4px 5px 0px 0px #02187e;
+  transition: all 0.3s ease;
+}
+
+.gran-poder-compra button p,
+#seccion-email button p {
+  margin: 0;
+  text-align: center;
+  color: #02187e;
+  font-weight: 900;
+}
+
+/*------------------------------------TRES SPIDERS(octavo contenedor)--------------------*/
+
+.tres-spiders-mans {
+  position: absolute;
+  top: 6455px;
+}
+
+#tres-spiders-gwen {
+  left: 0px;
+  position: absolute;
+  width: 268px;
+  height: 416.5px;
+  z-index: 2;
+}
+#tres-spiders-peter {
+  left: 300px;
+  position: absolute;
+  width: 416.5px;
+  height: 457.5px;
+  z-index: 2;
+}
+#tres-spiders-miles {
+  right: 0;
+  position: absolute;
+  width: 313.5px;
+  height: 398.5px;
+  z-index: 2;
+}
+
+/*---------------------------------SECCION EMAIL(noveno contenedor)-----------------------*/
+section.email {
+  top: 6994px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 1296px;
+  display: flex;
+  justify-content: center;
+}
+
+.email-contenido {
+  width: 100%;
+}
+
+#email-cielo {
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 1296px;
+}
+
+.email h1 {
+  top: 152px;
+  left: 232px;
+  position: absolute;
+  width: 816px;
+  color: #000;
+  text-align: center;
+}
+
+.email form {
+  position: absolute;
+  top: 415px;
+}
+
+#input-form {
+  left: 250px;
+  position: absolute;
+  width: 562px;
+  height: 80px;
+  border-radius: 50px 0px 0px 50px;
+  border-top: 9px solid #2982ff;
+  border-bottom: 9px solid #2982ff;
+  border-left: 9px solid #2982ff;
+  background: #fff;
+  box-shadow: 4px 5px 0px 0px #02187e;
+  /*para el texto de adentro*/
+  color: rgba(0, 0, 0, 0.39);
+}
+
+#boton-suscribirse {
+  left: 812px;
+  position: absolute;
+  width: 218px;
+  height: 100px;
+  border-radius: 0px 50px 50px 0px;
+  border: 9px solid #2982ff;
+  background: #ffe901;
+  box-shadow: 4px 5px 0px 0px #02187e;
+}
+
+#email-p {
+  /*para el texto de adentro del boton*/
+  left: 302px;
+  top: 539px;
+  position: absolute;
+  width: 578px;
+  height: 95px;
+}
+
+#img-rating {
+  left: 302px;
+  top: 680px;
+  position: absolute;
+  width: 231px;
+  height: 145px;
+}
+#edificios-email {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 720px;
+}
+
+#spider-email2 {
+  left: 533px;
+  position: absolute;
+  width: 58px;
+  height: 64px;
+}
+
+.boxSpritesheet {
+  z-index: 10;
+  position: absolute;
+  left: 40px;
+  bottom: 10px;
+  width: 53px;
+  height: 322px;
+  overflow: hidden;
+}
+
+.spritesheet {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.movimiento {
+  animation: movimiento 1s steps(8) infinite;
+}
+
+@keyframes movimiento {
+  form {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/*--------------------------------FOOTER(decimo contenedor)----------------------------*/
+#plataformas {
+  top: 8290px;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background: #242424;
+}
+
+footer {
+  position: absolute;
+  width: 1080px;
+  background-color: #5e5e5d;
+}
+
+.footer-contenido {
+  width: 70%;
+  padding-top: 20px;
+}
+
+.img-footer {
+  display: block;
+  top: 8290px;
+  position: absolute;
+}
+
+#footer-wrapper {
+  background-color: #5e5e5d;
+  top: 8365px;
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+#parrafo {
+  left: 100px;
+  position: absolute;
+  width: 820px;
+  color: #fff;
+  letter-spacing: 2.2px;
+}
+
+#parrafo-footer {
+  color: #fff;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
