@@ -129,18 +129,3 @@ document.addEventListener("scroll", () => {
     document.querySelector("#text4").classList.add("mostrar");
   }
 });
-
-/*-------------------------spritesheet--------------------*/
-
-const edificios = document.querySelector("#edificios-email");
-
-edificios.addEventListener("mouseover", async () => {
-  const spritesheet = document.querySelector(".spritesheet");
-  spritesheet.style.bottom = "0px";
-  spritesheet.classList.add("movimiento");
-});
-
-edificios.addEventListener("mouseout", () => {
-  const spritesheet = document.querySelector(".spritesheet");
-  spritesheet.classList.remove("movimiento");
-});

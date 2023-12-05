@@ -384,7 +384,7 @@ section.mini-historias .historia3 {
 #ghostspider div.fondo {
   position: absolute;
   z-index: 0;
-  background-image: url(../IMG/ghost-spider.png);
+  background-image: url(../img/ghost-spider.png);
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -556,16 +556,16 @@ section.vengadores div.fondo {
 }
 
 #img1 {
-  background-image: url(../IMG/mas-amigos-1.png);
+  background-image: url(../img/mas-amigos-1.png);
 }
 #img2 {
-  background-image: url(../IMG/mas-amigos-2.png);
+  background-image: url(../img/mas-amigos-2.png);
 }
 #img3 {
-  background-image: url(../IMG/mas-amigos-3.png);
+  background-image: url(../img/mas-amigos-3.png);
 }
 #img4 {
-  background-image: url(../IMG/mas-amigos-4.png);
+  background-image: url(../img/mas-amigos-4.png);
 }
 
 .boxTextos {
@@ -800,8 +800,15 @@ footer {
 
 .img-footer {
   display: block;
-  top: 8290px;
-  position: absolute;
+}
+
+.plataformas-wrapper{
+    background-color: #242424;
+    top: 8290px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #footer-wrapper {
